@@ -1,0 +1,22 @@
+html {
+  background-color: #2d333c;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  text-align: center;
+  width: auto;
+  border-radius: 1%;
+  padding: 10px;
+}
+
+.topbar {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: fit-content;
+  background-color: #194689;
+  margin-top: 1%;
+}
+
+

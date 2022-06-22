@@ -1,0 +1,34 @@
+
+.corner-bottom-left, .corner-top-left, .corner-top-right, .corner-bottom-right {
+  position: absolute;
+  width: 1200px;
+  height: 800px;
+  background-image: url('../../../pics/corner-tech.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.corner-bottom-left {
+ bottom:-350px;
+ left:0;
+}
+
+.corner-top-left {
+ top: 180px;
+ left:-560px;
+ transform: rotate(90deg);
+}
+
+.corner-top-right {
+  top:-350px;
+  right:0;
+  transform: rotate(180deg);
+}
+
+.corner-bottom-right {
+  bottom: 190px;
+  right: -560px;
+  transform: rotate(-90deg);
+}

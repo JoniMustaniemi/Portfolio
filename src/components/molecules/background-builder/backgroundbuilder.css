@@ -1,0 +1,15 @@
+.backgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../pics/lines.jpg');
+  transform: scaleX(-1);
+  background-size: cover;
+  background-color: #2d333c;
+  background-blend-mode: color-dodge;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.2;
+}

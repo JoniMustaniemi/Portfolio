@@ -1,0 +1,20 @@
+.projectContainer {
+  flex: 1;
+  background-color: #020e1d79;
+  margin:0;
+  margin:auto;
+  height: 90vh;
+}
+
+.idleBody {
+
+}
+
+.reactBody {
+}
+
+
+
+@media (max-width:2000px) {
+
+}
