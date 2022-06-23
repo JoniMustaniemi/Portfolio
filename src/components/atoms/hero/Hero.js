@@ -6,13 +6,12 @@ const Hero = ( props ) => {
 
   const scrollTo = () => {
     window.scrollTo({
-      top: 750,
+      top: 9999,
       behavior: 'smooth',
     });
   }
 
   const handleClick = () => {
-    alert("click");
     scrollTo();
   }
 

@@ -1,6 +1,53 @@
-.about-project {
-  text-align: center;
-  border-left: 1px solid #0d2a3e;
-  flex: 0.5;
-  height: 100%;
+.project-card {
+  border-top: 1px solid black;
+  border-bottom: 1px solid #0d2a3e;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  margin-top: 10px;
+}
+
+h1, h2, p {
+  text-shadow: rgb(14, 34, 42)  3px 0px 0px, rgb(14, 34, 42)  2.83487px 0.981584px 0px, rgb(14, 34, 42)  2.35766px 1.85511px 0px, rgb(14, 34, 42)  1.62091px 2.52441px 0px, rgb(14, 34, 42)  0.705713px 2.91581px 0px, rgb(14, 34, 42)  -0.287171px 2.98622px 0px, rgb(14, 34, 42)  -1.24844px 2.72789px 0px, rgb(14, 34, 42)  -2.07227px 2.16926px 0px, rgb(14, 34, 42)  -2.66798px 1.37182px 0px, rgb(14, 34, 42)  -2.96998px 0.42336px 0px, rgb(14, 34, 42)  -2.94502px -0.571704px 0px, rgb(14, 34, 42)  -2.59586px -1.50383px 0px, rgb(14, 34, 42)  -1.96093px -2.27041px 0px, rgb(14, 34, 42)  -1.11013px -2.78704px 0px, rgb(14, 34, 42)  -0.137119px -2.99686px 0px, rgb(14, 34, 42)  0.850987px -2.87677px 0px, rgb(14, 34, 42)  1.74541px -2.43999px 0px, rgb(14, 34, 42)  2.44769px -1.73459px 0px, rgb(14, 34, 42)  2.88051px -0.838247px 0px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.margin-right {
+  margin-left: 10%;
+}
+
+.margin-left {
+  margin-left: 40%;
+  
+}
+
+.set-right {
+  position: absolute;
+  right: 100px;
+}
+
+.set-left {
+  position: absolute;
+  left: 100px;
+}
+
+.project-info {
+  width: 50%;
+}
+
+.project-summary {
+  flex: 1;
+}
+
+.project-details {
+  
+  flex: 1;
 }
