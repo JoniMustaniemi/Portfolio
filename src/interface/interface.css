@@ -1,0 +1,28 @@
+html {
+  background-color: #2d333c;
+  height: auto;
+  width: auto;
+  background-image: url('../pics/circle.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-wrapper {
+  text-align: center;
+  width: auto;
+  border-radius: 1%;
+}
+
+.secondary-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.topbar {
+  position: fixed;  
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  height: fit-content;
+/*   background-color: #194689; */
+}

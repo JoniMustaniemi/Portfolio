@@ -1,15 +1,21 @@
 import { React } from 'react';
 import './project-container.css';
+import ProjectContent from '../project-content/ProjectContent';
+import Hero from '../hero/Hero';
+
 
 const ProjectContainer = ( props ) => {
 
-  return (
-      <div className={props.activeElementId.toLowerCase() + "Body projectContainer" }>
+  const projectContext = props.activeElementId;
+
+ return (
+      <div className={projectContext + "Body projectContainer" }>
         <div className="content-container">
-          <h1>{props.activeElementId}</h1>
+          <Hero/>
+         <ProjectContent name={projectContext}/>
         </div>
       </div>
-  )
+  ) 
  };
  
  export default ProjectContainer;

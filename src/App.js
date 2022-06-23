@@ -1,8 +1,7 @@
 import { React, useState } from 'react';
 import ProjectButton from './components/atoms/button/Button';
 import ProjectContainer from './components/atoms/project-container/ProjectContainer';
-import Backgroundbuilder from './components/molecules/background-builder/BackgroundBuilder';
-import './style/interface.css';
+import './interface/interface.css';
 import reactlogo from '../src/pics/react-logo.png';
 import pythonlogo from '../src/pics/python-logo.png';
 import typescriptlogo from '../src/pics/ts-logo.png';
@@ -21,6 +20,7 @@ function App() {
 
   const [activeElementId, setactiveElementId] = useState('idle');
 
+
   const displayActive = (element) => {
     let id = element.id;
     if (id === activeElementId) {
@@ -30,18 +30,26 @@ function App() {
     }
   }
 
+  const scrollTo = () => {
+    window.scrollTo({
+      top: 700,
+      behavior: 'smooth',
+    });
+  }
+
   const handleActiveStatus = (e) => {
     let projectCard = e.currentTarget.id;
     let currentStatus = active[e.currentTarget.id];
     setActive({[projectCard]: !currentStatus});
     displayActive(e.currentTarget);
+    scrollTo();
   }
 
   return (
     <div className="main-wrapper">
       <div className="secondary-wrapper">
       <div className='topbar'>
-        <ProjectButton name="React" projectLogo={reactlogo} active={active.React} onClick={handleActiveStatus}/>
+        <ProjectButton name="React" projectLogo={reactlogo} active={active.React} onClick={handleActiveStatus}/>  
         <ProjectButton name="Python" projectLogo={pythonlogo} active={active.Python} onClick={handleActiveStatus}/>
         <ProjectButton name="TypeScript" projectLogo={typescriptlogo} active={active.TypeScript} onClick={handleActiveStatus}/>
         <ProjectButton name="NodeJS" projectLogo={nodelogo} active={active.NodeJS} onClick={handleActiveStatus}/>
@@ -49,7 +57,6 @@ function App() {
       </div>
         <ProjectContainer activeElementId={activeElementId}/>
       </div>
-      <Backgroundbuilder/>
     </div>
   );
 }

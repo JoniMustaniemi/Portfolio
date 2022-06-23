@@ -1,11 +1,11 @@
 .projectbutton-background, .projectbutton-wrapper {
   width: 250px;
   height:100px;
+
 }
 
 .projectbutton, .projectbutton-background {
   border-radius: 2%;
-  
 }
 
 .projectbutton-background {
@@ -38,6 +38,8 @@
   height: inherit;
   z-index: 1;
   border: 1px solid #076182;
+  border-right: 1px solid black;
+  border-left: 1px solid #022430;
   color: #d4ccd3;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   letter-spacing: 3.4px;
@@ -50,7 +52,7 @@
 }
 
 .projectbutton-background:active {
-  transform: scale(0.9);
+  transform: translateY(10px);
 }
 
 .projectbutton h1 {
@@ -60,42 +62,10 @@
   transform: translateY(30px);
   border: 1px double silver;
   background-color: #172c46;
-}
-
-.ornament-border-top-left, .ornament-border-top-right, .ornament-border-bottom-right, .ornament-border-bottom-left {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000000a4;
- /*  z-index: -1; */
-}
-
-.ornament-border-top-left {
-  border-right: unset;
-  border-bottom: unset;
-  margin-left: -5px;
-  margin-top: -5px;
-}
-
-.ornament-border-top-right {
-  border-left: unset;
-  border-bottom: unset;
-  margin-left: 234px;
-  margin-top:-5px;
-}
-
-.ornament-border-bottom-right {
-  border-left: unset;
-  border-top: unset;
-  margin-left: 235px;
-  margin-top: 85px;
-}
-
-.ornament-border-bottom-left {
-  border-right: unset;
-  border-top: unset;
-  margin-left: -5px;
-  margin-top: 85px;
+  background-image: url('../../../pics/darkpattern.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:soft-light;
 }
 
 .active {
