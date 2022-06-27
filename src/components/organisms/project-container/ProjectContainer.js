@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './project-container.css';
 import ProjectContent from '../project-content/ProjectContent';
-import Hero from '../hero/Hero';
+import Hero from '../../atoms/hero/Hero';
 
 
 const ProjectContainer = ( props ) => {
@@ -12,7 +12,7 @@ const ProjectContainer = ( props ) => {
       <div className={projectContext + "Body projectContainer" }>
         <div className="content-container">
           <Hero/>
-         <ProjectContent name={projectContext}/>
+          <ProjectContent name={projectContext} activeElement={props.activeElement}/>
         </div>
       </div>
   ) 

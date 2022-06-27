@@ -28,8 +28,6 @@
   background-color: #0c6779;
 }
 
-/* mouse out event */
-
 .projectbutton {
   padding: 10px;
   background-color: transparent;
@@ -63,7 +61,7 @@
   background-image: url('../../../pics/darkpattern.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode:soft-light;
+  background-blend-mode: soft-light;
 }
 
 .active {

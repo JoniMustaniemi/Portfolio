@@ -1,0 +1,48 @@
+{
+"React Project 1": {
+  "id": "react_1",
+  "title": "React components",
+  "summary": "Project is about lorem lipsum",
+  "technologies": {
+    "tech_1": "React tech 1",
+    "tech_2": "React tech 2",
+    "tech_3": "React tech 3"
+    }
+  },
+"Python Project 1": {
+  "title": "Web crawler",
+  "summary": "Project is about lorem lipsum",
+  "technologies": {
+    "tech_1": "python tech 1",
+    "tech_2": "python tech 2",
+    "tech_3": "python tech 3"
+    }
+  },
+"Typescript Project 1": {
+  "title": "TS project",
+  "summary": "Project is about lorem lipsum",
+  "technologies": {
+    "tech_1": "ts tech 1",
+    "tech_2": "ts tech 2",
+    "tech_3": "ts tech 3"
+    }
+  },
+"NodeJS Project 1": {
+  "title": "NodeJS project",
+  "summary": "Project is about lorem lipsum",
+  "technologies": {
+    "tech_1": "node tech 1",
+    "tech_2": "node tech 2",
+    "tech_3": "node tech 3"
+    }
+  },
+"Design Project 1": {
+  "title": "Design project",
+  "summary": "Project is about lorem lipsum",
+  "technologies": {
+    "tech_1": "Design thing 1",
+    "tech_2": "Design thing 2",
+    "tech_3": "Design thing 3"
+    }
+  }
+}

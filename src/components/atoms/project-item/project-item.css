@@ -1,11 +1,16 @@
 .project-card {
-  border-top: 1px solid black;
-  border-bottom: 1px solid #0d2a3e;
+  border: 1px groove #0d2a3e;
   width: 100%;
   height: auto;
   min-height: 300px;
   display: flex;
-  margin-top: 10px;
+  background-size: contain;
+  transform: rotateX(0deg);
+  transition-duration: 1s;
+}
+
+.project-card:hover {
+  border-color: white;
 }
 
 h1, h2, p {
@@ -43,11 +48,35 @@ h1, h2, p {
   width: 50%;
 }
 
-.project-summary {
-  flex: 1;
+.active-element  {
+  transition-duration: 1s;
+  transform: rotateX(180deg);
+  background-color: #0000003c;
 }
 
-.project-details {
-  
-  flex: 1;
+.active-element h1, .active-element .project-info {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+
+.project-info, h1 {
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.active-project-details {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  transition-duration: 2s;
+  opacity: 1;
+  width: inherit;
+  min-height: inherit;
+  background-color: rgba(4, 15, 24, 0.203);
 }

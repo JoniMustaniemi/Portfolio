@@ -4,30 +4,42 @@ import './project-item.css';
 
 const ProjectItem = ( props ) => {
 
+  const onClick = props.onClick;
+  const isActive = props.active;
+
   let marginDirection = '';
   let position = ''
-  if ( props.alignDirection === 'right') {
+
+ let title = props.projectDetails.title;
+ let summary = props.projectDetails.summary;
+ let techs = props.projectDetails.technologies;
+  
+  if (props.alignDirection === 'right') {
     marginDirection = 'left';
     position = "set-left";
   } else {
     marginDirection = 'right';
     position = "set-right";
   }
-  return (
 
-    <div className={"project-card align-" + props.alignDirection} style={{ backgroundImage: `url(${props.projectBackground})`}}><h1 className={position}>{props.name}</h1>
+  return (
+    <div id={props.id} className={isActive ? "active-element project-card align-" + props.alignDirection : "project-card align-" + props.alignDirection} style={{ backgroundImage: `url(${props.projectBackground})`}} onClick={onClick}>
+      <h1 className={position}>{title}</h1>
       <div className={"project-info margin-" + marginDirection}>
         <div className="project-summary">
           <h2>Project Summary</h2>
-          <p>Project is about lorem lipsum</p>
+          <p>{summary}</p>
         </div>
         <div className="project-details">
           <h2>Technologies used</h2>
-          <p> tech 1</p>
-          <p> tech 2</p>
-          <p> tech 3</p>
+          { techs["tech_1"] ? <p>{techs["tech_1"]}</p> : ''}
+          { techs["tech_2"] ? <p>{techs["tech_2"]}</p> : ''}
+          { techs["tech_3"] ? <p>{techs["tech_3"]}</p> : ''}
+          { techs["tech_4"] ? <p>{techs["tech_4"]}</p> : ''}
+          { techs["tech_5"] ? <p>{techs["tech_5"]}</p> : ''}
         </div>
       </div>
+      <div className={isActive ? "active-project-details" : "opacity-0"}></div>
     </div>
   )
  };
