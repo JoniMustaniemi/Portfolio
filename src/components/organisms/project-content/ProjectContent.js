@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import './project-content.css';
 import ProjectItemList from '../../molecules/project-item-list/ProjectItemList';
 import AboutMe from '../../atoms/about-me/AboutMe';

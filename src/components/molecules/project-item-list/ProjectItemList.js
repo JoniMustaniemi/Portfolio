@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import './project-item-list.css';
 import ProjectItem from '../../atoms/project-item/ProjectItem';
 import triang1 from '../../../pics/tech-triangle.png';
-import triang2 from '../../../pics/tech-triangle-inverted.png';
+/* import triang2 from '../../../pics/tech-triangle-inverted.png'; */
 import projects from '../../../../src/projects.json';
 
 
