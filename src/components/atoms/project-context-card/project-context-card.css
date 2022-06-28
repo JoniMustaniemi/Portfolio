@@ -1,14 +1,13 @@
-.projectbutton-background, .projectbutton-wrapper {
+.project-context-card-background, .project-context-card-wrapper {
   width: 250px;
   height:100px;
-
 }
 
-.projectbutton, .projectbutton-background {
+.project-context-card, .project-context-card-background {
   border-radius: 2%;
 }
 
-.projectbutton-background {
+.project-context-card-background {
   background-color: #0f0f10;
   background-image: url('../../../pics/tech.jpg');
   background-size: contain;
@@ -17,18 +16,19 @@
  /*  overflow: hidden; */
 }
 
-.projectbutton-wrapper {
+.project-context-card-wrapper {
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 50% 15%;
   z-index: 1;
 }
 
-.projectbutton-background:hover {
+
+.project-context-card-background:hover {
   background-color: #0c6779;
 }
 
-.projectbutton {
+.project-context-card {
   padding: 10px;
   background-color: transparent;
   width: inherit;
@@ -47,11 +47,11 @@
   text-shadow: rgb(14, 34, 42)  3px 0px 0px, rgb(14, 34, 42)  2.83487px 0.981584px 0px, rgb(14, 34, 42)  2.35766px 1.85511px 0px, rgb(14, 34, 42)  1.62091px 2.52441px 0px, rgb(14, 34, 42)  0.705713px 2.91581px 0px, rgb(14, 34, 42)  -0.287171px 2.98622px 0px, rgb(14, 34, 42)  -1.24844px 2.72789px 0px, rgb(14, 34, 42)  -2.07227px 2.16926px 0px, rgb(14, 34, 42)  -2.66798px 1.37182px 0px, rgb(14, 34, 42)  -2.96998px 0.42336px 0px, rgb(14, 34, 42)  -2.94502px -0.571704px 0px, rgb(14, 34, 42)  -2.59586px -1.50383px 0px, rgb(14, 34, 42)  -1.96093px -2.27041px 0px, rgb(14, 34, 42)  -1.11013px -2.78704px 0px, rgb(14, 34, 42)  -0.137119px -2.99686px 0px, rgb(14, 34, 42)  0.850987px -2.87677px 0px, rgb(14, 34, 42)  1.74541px -2.43999px 0px, rgb(14, 34, 42)  2.44769px -1.73459px 0px, rgb(14, 34, 42)  2.88051px -0.838247px 0px;
 }
 
-.projectbutton-background:active {
+.project-context-card-background:active {
   transform: translateY(10px);
 }
 
-.projectbutton h1 {
+.project-context-card h1 {
   transition-duration: 1s;
   font-size: 1.5em;
   padding: 3px;

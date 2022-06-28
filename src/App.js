@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import ProjectButton from './components/atoms/button/Button';
+import ProjectContextCard from './components/atoms/project-context-card/ProjectContextCard';
 import ProjectContainer from './components/organisms/project-container/ProjectContainer';
 import './interface/interface.css';
 import reactlogo from '../src/pics/react-logo.png';
@@ -38,9 +38,8 @@ function App() {
   }
 
   const handleActiveStatus = (e) => {
-    let projectCard = e.currentTarget.id;
     let currentStatus = active[e.currentTarget.id];
-    setActive({[projectCard]: !currentStatus});
+    setActive({[e.currentTarget.id]: !currentStatus});
     displayActive(e.currentTarget);
     scrollTo();
   }
@@ -49,11 +48,11 @@ function App() {
     <div className="main-wrapper">
       <div className="secondary-wrapper">
       <div className='topbar'>
-        <ProjectButton name="React" projectLogo={reactlogo} active={active.React} onClick={handleActiveStatus}/>
-        <ProjectButton name="Python" projectLogo={pythonlogo} active={active.Python} onClick={handleActiveStatus}/>
-        <ProjectButton name="Typescript" projectLogo={typescriptlogo} active={active.Typescript} onClick={handleActiveStatus}/>
-        <ProjectButton name="Nodejs" projectLogo={nodelogo} active={active.Nodejs} onClick={handleActiveStatus}/>
-        <ProjectButton name="Design" projectLogo={designlogo} active={active.Design} onClick={handleActiveStatus}/>
+        <ProjectContextCard name="React" projectLogo={reactlogo} active={active.React} onClick={handleActiveStatus}/>
+        <ProjectContextCard name="Python" projectLogo={pythonlogo} active={active.Python} onClick={handleActiveStatus}/>
+        <ProjectContextCard name="Typescript" projectLogo={typescriptlogo} active={active.Typescript} onClick={handleActiveStatus}/>
+        <ProjectContextCard name="Nodejs" projectLogo={nodelogo} active={active.Nodejs} onClick={handleActiveStatus}/>
+        <ProjectContextCard name="Design" projectLogo={designlogo} active={active.Design} onClick={handleActiveStatus}/>
       </div>
         <ProjectContainer activeElementId={activeElementId} activeElement={active}/>
       </div>
