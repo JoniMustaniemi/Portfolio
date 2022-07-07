@@ -15,7 +15,7 @@ function App() {
     Python: false,
     Typescript: false,
     Nodejs: false,
-    Design: false
+    Design: false,
   });
 
   const [activeElementId, setactiveElementId] = useState('');

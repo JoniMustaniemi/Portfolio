@@ -1,9 +1,5 @@
-
 .projectContainer {
   flex: 1;
   background-color: #020e1d79;
   margin:auto;
-}
-@media (max-width:2000px) {
-
 }

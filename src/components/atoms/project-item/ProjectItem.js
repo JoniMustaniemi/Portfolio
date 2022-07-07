@@ -5,7 +5,7 @@ import './project-item.css';
 const ProjectItem = ( props ) => {
 
   const onClick = props.onClick;
-  const isActive = props.active;  
+  const isActive = props.active; 
 
   let marginDirection = '';
   let position = ''
@@ -29,7 +29,6 @@ const ProjectItem = ( props ) => {
       { !isActive ? <div className={"project-info margin-" + marginDirection}>
         <div className="project-summary">
           <h2>Project Summary</h2>
-          { isActive ? <p>{summary}</p> : ''}
         </div>
         <div className="project-details">
           <h2>Technologies used</h2>
@@ -39,6 +38,10 @@ const ProjectItem = ( props ) => {
           { techs["tech_4"] ? <p>{techs["tech_4"]}</p> : ''}
           { techs["tech_5"] ? <p>{techs["tech_5"]}</p> : ''}
         </div>
+      </div>: ''}
+      {isActive ? <div className="project-full-info-container">
+        <div className="project-image"></div>
+        <p>Henlo</p>
       </div>: ''}
     </div>
   )

@@ -34,15 +34,14 @@ const ProjectItemList = ( props ) => {
  const designProject1 = projectDetails['Design-Project-1'];
 
   const handleActiveStatus = (e) => {
-    let currentStatus = active[e.currentTarget.id];
-    setActive({ [e.currentTarget.id]: !currentStatus});
+    setActive({ [e.currentTarget.id]: true});
   }
 
   return (
     <div className='project-list-container'>
-      <h1>PROJECTS</h1>
+      
       {/* React Projects */}
-        {props.activeProjectContext.React ? <ProjectItem  active={active.react_1} context={'react'} projectBackground={triang1} projectDetails={reactProject1} alignDirection="right" onClick={handleActiveStatus}/> : ''}
+        {props.activeProjectContext.React ? <ProjectItem active={active.react_1} context={'react'} projectBackground={triang1} projectDetails={reactProject1} alignDirection="right" onClick={handleActiveStatus}/> : ''}
         {props.activeProjectContext.React ? <ProjectItem active={active.react_2} context={'react'} projectBackground={triang2} projectDetails={reactProject2} alignDirection="left" onClick={handleActiveStatus}/> : ''}
       {/* Python Projects */}
         {props.activeProjectContext.Python ? <ProjectItem active={active.python_1} context={'python'} projectBackground={triang1} projectDetails={pythonProject1} alignDirection="right" onClick={handleActiveStatus}/> : ''}
@@ -55,4 +54,5 @@ const ProjectItemList = ( props ) => {
     </div>
   )
  };
+ 
  export default ProjectItemList;

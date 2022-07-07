@@ -1,5 +1,5 @@
 .project-card {
-  border: 1px groove #0d2a3e;
+  border: 2px groove #0d2a3e;
   width: 100%;
   height: auto;
   min-height: 300px;
@@ -7,10 +7,12 @@
   background-size: contain;
   transform: rotateX(0deg);
   transition-duration: 1s;
+  overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .project-card:hover {
-  border-color: white;
+  border-color:silver
 }
 
 h1, h2, p {
@@ -50,14 +52,61 @@ h1, h2, p {
 
 .active-element  {
   height: 80vh;
-  background-color: #0000003c;
+  background-color: #0000005a;
+  border-radius: 10px;
+  border-color: silver;
+  background-image: unset !important;
 }
 
-.project-info {
-  opacity: 1;
+.active-element h1.set-left, .active-element h1.set-right {
+  height: 100%;
+  left: auto;
+  right: auto;
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 20px;
+  width: 20%;
 }
+
+ .active-element h1.set-left  {
+    left: 0;
+    border-right: 2px groove silver;
+  }
+
+  .active-element h1.set-right  {
+    right: 0;
+    border-left: 2px groove silver;
+  }
 
 .opacity-0 {
   opacity: 0;
   transition-duration: 2s;
+}
+
+.project-full-info-container {
+  height: 90%;
+  margin-top: 120px;
+  background-color: #00000078;
+  width: inherit;
+  border-top:  2px groove silver;
+  text-align: center;
+}
+
+.align-left .project-image, .align-right .project-image {
+  position: absolute;
+  width: 18%;
+  height: 75%;
+  bottom: 8%;
+  border: 2px groove #82610ef9;
+  border-radius: 10px;
+  background-color: #0e48712b;
+}
+
+.align-right .project-image {
+  left: 1%;
+}
+
+.align-left .project-image {
+  right: 1%;
 }

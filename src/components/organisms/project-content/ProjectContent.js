@@ -12,7 +12,7 @@ const ProjectContent = ( props ) => {
     <><div className={name + '-section section'}>
         <ProjectItemList name={name} activeProjectContext={props.activeElement} />
     </div>
-    <div className="section about-me">  
+    <div className="about-me">  
       <AboutMe/>
     </div></>
   )
